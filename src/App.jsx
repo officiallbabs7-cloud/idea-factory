@@ -4,9 +4,7 @@ import Footer from "./components/Footer";
 import Statistics from "./components/Statistics";
 import ProblemStatements from "./components/ProblemStatements";
 import Newsletter from "./components/Newsletter";
-import Idea from "./components/idea";
-
-
+import Idea from "./components/Idea"
 
 function App() {
   return (
