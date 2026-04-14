@@ -17,16 +17,16 @@ backgroundImage: `url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox=
           technology and emerging technology
         </p>
 
-        <div className="w-full max-w-lg flex flex-col sm:flex-row items-center gap-4 sm:gap-0 sm:bg-white sm:p-1.5 sm:rounded-full shadow-sm">
-          <input
-            type="email"
-            placeholder="Enter your email here"
-            className="w-full flex-1 px-6 py-4 bg-white sm:bg-transparent rounded-full sm:rounded-none outline-none text-gray-700 text-lg placeholder-gray-400"
-          />
-          <button className="w-full sm:w-auto bg-[#9b117c] cursor-pointer text-white px-10 py-4 rounded-full font-semibold transition-all hover:opacity-90">
-            Subscribe
-          </button>
-        </div>
+        <div className="w-full max-w-lg bg-white p-1.5 rounded-full shadow-lg flex items-center">
+  <input
+    type="email"
+    placeholder="Enter your email here"
+    className="w-full flex-1 px-4 sm:px-6 py-3 bg-transparent outline-none text-gray-700 text-sm sm:text-base md:text-lg placeholder-gray-400 min-w-0"
+  />
+  <button className="bg-[#9b117c] cursor-pointer text-white px-5 sm:px-10 py-3 rounded-full font-semibold transition-all text-sm sm:text-base whitespace-nowrap">
+    Subscribe
+  </button>
+</div>
       </div>
     </div> 
   );

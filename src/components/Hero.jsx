@@ -34,15 +34,15 @@ const Hero = () => {
             alt="leftheads"
             width="250"
           />
-<div className="relative w-[512px] mx-auto mt-20">
+<div className="relative max-w-[512px] mx-auto mt-20 px-4">
   
   <div className="absolute top-8 left-1/2 -translate-x-1/2 w-[90%] h-full bg-[#f3e8ff] rounded-[30px] -z-20 border border-gray-100/20"></div>
   <div className="absolute top-4 left-1/2 -translate-x-1/2 w-[95%] h-full bg-[#f3e8ff] rounded-[30px] -z-10 border border-gray-100/40"></div>
 
-  <div className="relative z-10 w-[512px] h-[324px] bg-white rounded-[30px] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-gray-50 flex flex-col justify-between text-center md:text-left">
+  <div className="relative z-10 w-full  min-h-[324px] bg-white rounded-[30px] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-gray-50 flex flex-col justify-between text-center md:text-left">
     
     <div
-      className="absolute top-6 left-6 bg-[#92008E] text-white w-15 h-15 flex items-center justify-center font-bold text-base z-20 shadow-md"
+      className="absolute top-6 left-6 bg-[#92008E] text-white w-10 h-10 flex items-center justify-center font-bold text-base z-20 shadow-md"
       style={{ clipPath: "polygon(50% 0%, 61% 10%, 75% 5%, 78% 18%, 91% 21%, 88% 35%, 100% 45%, 91% 55%, 94% 69%, 81% 72%, 78% 86%, 64% 83%, 50% 100%, 36% 83%, 22% 86%, 19% 72%, 6% 69%, 9% 55%, 0% 45%, 9% 35%, 6% 21%, 19% 18%, 22% 5%, 36% 10%)" }}
     >
       1st
@@ -50,8 +50,8 @@ const Hero = () => {
 
 <div className="flex items-center justify-center gap-4 mb-4 mt-1">
   
-  <div className="w-20 h-20  bg-[#E0F2FE] rounded-full flex items-center justify-center overflow-hidden shrink-0 border-2 border-white shadow-sm">
-    <svg className="w-30 h-30 text-blue-300/40" fill="currentColor" viewBox="0 0 24 24">
+  <div className="w-10 h-10  bg-[#E0F2FE] rounded-full flex items-center justify-center overflow-hidden shrink-0 border-2 border-white shadow-sm">
+    <svg className="w-10 h-10 text-blue-300/40" fill="currentColor" viewBox="0 0 24 24">
       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
     </svg>
   </div>
