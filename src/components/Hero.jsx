@@ -3,7 +3,7 @@ import rightGroup from "../assets/right group.png";
 
 const Hero = () => {
   return (
-    <section className="relative bg-white overflow-x-hidden min-h-screen font-urbanist">
+    <section className="relative bg-white overflow-hidden min-h-screen font-urbanist mt-[106px] pb-20">
       
       <div className="absolute top-[-10%] left-[-10%] w-125 h-125 bg-purple-100/40 rounded-full blur-[100px] -z-10"></div>
       <div className="absolute bottom-[-10%] right-[-10%] w-100 h-100 bg-blue-50/40 rounded-full blur-[100px] -z-10"></div>

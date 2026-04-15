@@ -8,7 +8,7 @@ import Idea from "./components/Idea"
 
 function App() {
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-x-hidden">
       <Navbar />
       <Hero />
       <Statistics />

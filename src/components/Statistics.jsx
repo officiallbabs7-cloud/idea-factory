@@ -1,6 +1,6 @@
 const Statistics = () => {
   return (
-      <div className="bg-[#92008E] text-white rounded-lg py-6 w-11/12 mx-auto max-w-6xl">
+      <div className="bg-[#92008E] text-white rounded-lg py-6 w-11/12 mx-auto max-w-6xl mt-20 mb-20">
          <div className="w-full flex">
         
         <div className="text-center flex-1 px-3 flex flex-col justify-between border-r-2">
