@@ -1,40 +1,65 @@
-import digitalEncode from "../assets/digital-encode.png"
+import ProblemStatement from "./ProblemStatement";
 
-const ProblemStatements = ({ title, description, reverse, pattern }) => {
+const ProblemStatementsList = () => {
   return (
-    <div className="my-40 w-full max-w-6xl mx-auto px-6 md:px-10">
-      
-      
-      <section className={`flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 ${reverse ? "md:flex-row-reverse" : ""}`}>
-        
-        <div className="relative shrink-0">
-          {pattern} 
-          
-          <div className="relative z-10 bg-[#F1F1F1] rounded-3xl w-80 h-100 md:w-85 md:h-110 shadow-2xl overflow-hidden border border-gray-100">
-            <img
-              src={digitalEncode}
-              alt="Challenge Visual"
-              className="w-full h-full object-cover transition-all duration-500 hover:scale-110"
-            />
-          </div>
-        </div>
+    <>
+      <ProblemStatement
+        title="Digital Encode"
+        description="Digital Encode is a leading consulting and integration firm..."
+        reverse={false}
+        pattern={
+          <>
+            <div className="absolute -left-15 top-[25%] w-10 h-10 border-4 border-[#37D67A] rounded-full z-0 hidden md:block" />
+            <div className="absolute top-[45%] -left-16 grid grid-cols-4 gap-x-6 gap-y-10 z-0">
+              {[...Array(28)].map((_, i) => (
+                <div
+                  key={i}
+                  className="w-1.5 h-1.5 rounded-full bg-[#37D67A]"
+                />
+              ))}
+            </div>
+          </>
+        }
+      />
 
-        <div className="max-w-lg md:flex-1 text-left">
-          <h2 className="text-4xl md:text-5xl font-medium text-[#455261] mb-6 font-urbanist leading-tight">
-            {title}
-          </h2>
-          <p className="text-xl text-[#374151]/80 leading-relaxed mb-10 font-urbanist font-light line-clamp-5">
-            {description}
-          </p>
-          <button className="bg-[#92008E] hover:bg-[#7a0076]/70 text-white px-10 py-4 rounded-xl text-xl font-light shadow-lg flex items-center gap-3 transition-all cursor-pointer">
-            View Problem Statement
-            <span className="text-2xl">→</span>
-          </button>
-        </div>
-        
-      </section>
-    </div>
-  )
-}
+      <ProblemStatement
+        title="New Year challenge"
+        description="Add something great"
+        reverse={true}
+        pattern={
+          <>
+            <div className="absolute -top-14 left-1/2 -translate-x-1/2 w-12 h-12 border-4 border-[#37D67A] rounded-full z-20" />
+            <div className="absolute top-1/2 -right-21 -translate-y-1/2 grid grid-cols-3 gap-x-8 gap-y-10 z-0 opacity-80">
+              {[...Array(12)].map((_, i) => (
+                <div
+                  key={i}
+                  className="w-1.5 h-1.5 rounded-full bg-[#37D67A]"
+                />
+              ))}
+            </div>
+          </>
+        }
+      />
 
-export default ProblemStatements;
+      <ProblemStatement
+        title="Instant ATM Card Dispensing Kiosk Naming Challenge"
+        description="Introducing the Wema Bank's Kiosk machine..."
+        pattern={
+          <>
+            <div className="absolute -top-10 -left-10 w-12 h-12 border-4 border-[#37D67A] rounded-full z-20 hidden md:block" />
+            <div className="absolute -bottom-24 -right-20 grid grid-cols-8 gap-x-10 gap-y-10 z-0 opacity-80">
+              {[...Array(40)].map((_, i) => (
+                <div
+                  key={i}
+                  className="w-1.5 h-1.5 rounded-full bg-[#37D67A]"
+                />
+              ))}
+            </div>
+          </>
+        }
+      />
+    </>
+  );
+};
+
+export default ProblemStatementsList;
